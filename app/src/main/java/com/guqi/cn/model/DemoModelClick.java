@@ -9,6 +9,8 @@ import com.google.gson.Gson;
 import com.guqi.cn.config.callback.AppResponse;
 import com.guqi.cn.config.Urls;
 import com.guqi.cn.config.callback.JsonCallback;
+import com.guqi.cn.net.API;
+import com.guqi.cn.net.RetrofitManager;
 import com.lzy.okgo.OkGo;
 
 import java.io.IOException;
@@ -24,6 +26,8 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
+import okhttp3.ResponseBody;
+import retrofit2.Retrofit;
 
 import static com.guqi.cn.config.Urls.SHENGXIANGUI;
 
@@ -65,6 +69,25 @@ public class DemoModelClick {
         getNetJiaQian();
     }
 
+    public void getNetJiaQian_Retrofit() {
+        API api = RetrofitManager.getRetrofit().create(API.class);
+        Map<String, Object> map = new HashMap<>();
+        map.put("code", "100057");
+        map.put("key", Urls.key);
+        map.put("device_ccid", "aaaaaaaaaaaaaaaa10150018");
+      //  Call<ResponseBody> responseCall = api.getResult();
+//        responseCall.enqueue(new Callback() {
+//            @Override
+//            public void onFailure(Call call, IOException e) {
+//
+//            }
+//
+//            @Override
+//            public void onResponse(Call call, Response response) throws IOException {
+//
+//            }
+//        });
+    }
 
     private void getNetJiaQian() {
         Map<String, Object> map = new HashMap<>();

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 沉浸式使用view的id -->
+    <item name="basic_view" type="id" />
+    <!-- 设置toolbar使用view的id -->
+    <item name="basic_toolbar" type="id" />
+
+</resources>

@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <data>
-
-        <variable
-            name="geRenXinXi"
-            type="com.guqi.cn.model.DemoModel" />
-
-        <variable
-            name="event"
-            type="com.guqi.cn.model.DemoModelClick" />
-
-        <variable
-            name="imageData"
-            type="String" />
-    </data>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,37 +13,35 @@
         android:orientation="vertical"
         tools:context=".activity.MainActivity">
 
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
         <TextView
             android:id="@+id/tv_xingMing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="@{event.bttonClick}"
-            android:text="@{geRenXinXi.xingMing}"
             android:textSize="30sp" />
 
         <TextView
             android:id="@+id/tv_nianling"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{geRenXinXi.nianLing}"
+
             android:textSize="30sp" />
 
         <TextView
             android:id="@+id/tv_xingbie"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{geRenXinXi.xingBie}"
+
             android:textSize="30sp" />
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            app:imageUrl="@{imageData}" />
 
         <Button
-            android:onClick="@{event.postOk}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="okhttp网络请求" />
     </LinearLayout>
-</layout>
+</LinearLayout>

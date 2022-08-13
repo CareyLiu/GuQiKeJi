@@ -3,4 +3,27 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+<!--    透明色-->
+    <color name="transparent">#00000000</color>
+    <!--字体-->
+    <color name="car_text_black7">#4e4e4e</color>
+    <!-- 透明 -->
+    <color name="white">#ffffff</color>
+    <!-- 海军色 -->
+    <color name="black">#313131</color>
+    <!--暗红色 -->
+    <color name="car_text_red">#EE5460</color>
+    <!--红色-->
+    <color name="red">#FF0000</color>
+    <!--浅黑-->
+    <color name="car_text_black">#333333</color>
+    <!--灰色背景-->
+    <color name="gay">#f2f2f2</color>
+    <!--浅灰色-->
+    <color name="split">#cccccc</color>
+    <!--浅蓝色-->
+    <color name="blue_light">#84b9ff</color>
+    <color name="blue">#3a96e9</color>
+    <color name="dark_black">#373737</color>
+    <color name="grayeeeeeee">#eeeeee</color>
 </resources>
